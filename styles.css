@@ -26,3 +26,14 @@ body {
     user-select: none;
   }
   
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+    }
+    ul li:hover {
+      background: #ddd;
+    }
+    ul li.checked {
+      background: teal;
+      color: white;
+      text-decoration: line-through;
+    }
