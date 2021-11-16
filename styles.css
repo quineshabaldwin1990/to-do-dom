@@ -37,3 +37,47 @@ body {
       color: white;
       text-decoration: line-through;
     }
+
+    ul li.checked::before {
+        content: '';
+        position: absolute;
+        border-color: #fff;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        top: 10px;
+        left: 16px;
+        transform: rotate(45deg);
+        height: 15px;
+        width: 7px;
+      }
+      
+      
+      .header {
+        background-color: black;
+        padding: 30px 40px;
+        color: white;
+        text-align: center;
+      }
+      .header:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      input {
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        width: 75%;
+        padding: 10px;
+        float: left;
+        font-size: 16px;
+      }
+      .edit {
+        float: right;
+        background-color: blue;
+      }
+      .delete {
+        float: right;
+        background-color: red;
+      
+      }
