@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="todolist.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1 >ToDo</h1>
+      <input type="text" id="myInput" placeholder="Add to your todo list... ">
+	  <input type="submit" id="add" onclick="addNewTask()"  value="ADD"  style="background-color:green; border-color:blue; color:black" />
+	    <input type="submit" onclick="removeCompletedTasks()" value="REMOVE COMPLTED TASKS" style="background-color:yellow; border-color:blue; color:black"/>
+	  <input type="submit" onclick="removeAllTasks()" value="REMOVE ALL" style="background-color:red; border-color:blue; color:black" />
+    </div>
+	<div>
+	 <h3 style="color:white" >Your todo tasks</h3>
+	 <ul id="myUL">
+    </ul>
+	</div>
+	
+    <script type="text/javascript" src="todolist.js"></script>
+  </body>
+</html>
